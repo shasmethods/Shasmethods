@@ -96,3 +96,330 @@ nav ul li a:hover{
     color:#FFD700;
 
 }
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+
+    width:100%;
+    height:90vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:20px;
+
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("../images/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content h2{
+
+    font-size:60px;
+    color:#FFD700;
+
+    margin-bottom:20px;
+}
+
+.hero-content p{
+
+    font-size:22px;
+
+    color:#ddd;
+
+    margin-bottom:40px;
+
+    line-height:1.8;
+}
+
+/* Buttons */
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    margin:10px;
+
+    background:#FFD700;
+
+    color:#000;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.btn:hover{
+
+    background:white;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(255,215,0,.4);
+
+}
+
+/* ===========================
+   CATEGORIES
+=========================== */
+
+.categories{
+
+    padding:80px 8%;
+    text-align:center;
+
+}
+
+.categories h2{
+
+    font-size:40px;
+    color:#FFD700;
+    margin-bottom:50px;
+
+}
+
+.category-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+.category-card{
+
+    background:#1a1a1a;
+
+    padding:40px 20px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,215,0,.2);
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.category-card h3{
+
+    color:white;
+
+    font-size:24px;
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#FFD700;
+
+    box-shadow:0 15px 35px rgba(255,215,0,.2);
+
+}
+
+/* ===========================
+   FEATURED PRODUCTS
+=========================== */
+
+.featured{
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+.featured h2{
+
+    font-size:40px;
+
+    color:#FFD700;
+
+    margin-bottom:50px;
+
+}
+
+.product-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.product-card{
+
+    background:#1a1a1a;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,215,0,.15);
+
+}
+
+.product-card:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 15px 35px rgba(255,215,0,.25);
+
+}
+
+.product-card img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+}
+
+.product-card h3{
+
+    color:#FFD700;
+
+    margin-bottom:10px;
+
+}
+
+.product-card p{
+
+    color:#ddd;
+
+}
+/* ===========================
+   WHY SECTION
+=========================== */
+
+.why{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.why h2{
+    color:#FFD700;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.why ul{
+    list-style:none;
+}
+
+.why ul li{
+    font-size:20px;
+    margin:15px 0;
+    color:#ddd;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#000;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    border-top:1px solid rgba(255,215,0,.2);
+
+}
+
+footer h2{
+
+    color:#FFD700;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    color:#bbb;
+
+    margin:8px 0;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    padding:20px;
+
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    text-align:center;
+
+}
+
+.hero-content h2{
+
+    font-size:38px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+}
+
+.categories h2,
+.featured h2,
+.why h2{
+
+    font-size:30px;
+
+}
+
+}
+
+/* ===========================
+   SMOOTH SCROLL
+=========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
