@@ -1,92 +1,98 @@
+/* ===========================
+   SHAS METHODS - PREMIUM CSS
+   =========================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
+/* Body */
+
 body{
-    font-family:Arial, sans-serif;
-    background:#111;
+    background:#0b0b0b;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
     color:white;
 }
 
+/* Header */
+
 header{
-    padding:20px 8%;
+
+    width:100%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(0,0,0,.85);
+
+    position:sticky;
+    top:0;
+
+    z-index:999;
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,215,0,.15);
+
 }
 
-.logo{
-    font-size:32px;
-    font-weight:bold;
+/* Logo */
+
+.logo h1{
+
+    color:#FFD700;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
 }
 
-nav a{
-    color:#00e5ff;
-    text-decoration:none;
-    margin-left:25px;
-    font-size:18px;
-}
+/* Navigation */
 
-nav a:hover{
-    color:white;
-}
+nav ul{
 
-.hero{
-    height:80vh;
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
 
-.hero h1{
-    font-size:55px;
-    margin-bottom:20px;
-}
+    list-style:none;
 
-.hero p{
-    font-size:22px;
-    margin-bottom:30px;
-}
-
-.btn{
-    background:#00e5ff;
-    color:black;
-    padding:14px 35px;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-.categories{
-    width:90%;
-    margin:80px auto;
-}
-
-.categories h2{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:36px;
-}
-
-.category-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:30px;
+
 }
 
-.card{
-    background:#222;
-    padding:40px;
-    border-radius:12px;
-    text-align:center;
-    transition:0.3s;
+nav ul li a{
+
+    color:#fff;
+
+    font-size:17px;
+
+    transition:.3s;
+
+    font-weight:500;
+
 }
 
-.card:hover{
-    transform:translateY(-10px);
-    background:#333;
+nav ul li a:hover{
+
+    color:#FFD700;
+
 }
