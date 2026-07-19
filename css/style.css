@@ -1,98 +1,81 @@
 /* =========================
-   SHAS METHODS
-   PREMIUM LUXURY STYLE
-   CSS PART 1
+   SHAS METHODS PREMIUM CSS
+   PART 1 - RESET + HEADER
 ========================= */
 
 
-/* RESET */
+/* Reset */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
-}
-
-
-html{
-    scroll-behavior:smooth;
 }
 
 
 body{
 
+    font-family: "Poppins", sans-serif;
+
     background:#0b0b0b;
-    color:#ffffff;
+
+    color:white;
+
     line-height:1.6;
+
 }
 
 
-/* REMOVE DEFAULT STYLE */
+
+
+/* Links */
 
 a{
+
     text-decoration:none;
-    color:inherit;
-}
 
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-
-ul{
-    list-style:none;
-}
-
-
-/* COMMON CONTAINER */
-
-.container{
-
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+    color:white;
 
 }
 
 
 
-/* =========================
-        HEADER
-========================= */
+/* Header */
 
 
 header{
 
     width:100%;
-    background:#050505;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
 
     padding:20px 8%;
 
-    position:sticky;
-    top:0;
-    z-index:1000;
+    display:flex;
 
-    border-bottom:1px solid rgba(212,175,55,0.3);
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#050505;
+
+    border-bottom:1px solid #c9a227;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
 
 }
 
 
 
-/* LOGO */
+
 
 header h1{
 
-    font-size:32px;
-    font-weight:700;
-
     color:#d4af37;
+
+    font-size:32px;
 
     letter-spacing:2px;
 
@@ -100,50 +83,24 @@ header h1{
 
 
 
-/* =========================
-        NAVIGATION
-========================= */
+
+
+/* Navigation */
 
 
 nav{
 
     display:flex;
-    gap:35px;
+
+    gap:30px;
 
 }
+
 
 
 nav a{
 
-    color:white;
-
     font-size:16px;
-
-    font-weight:500;
-
-    position:relative;
-
-    transition:0.3s;
-
-}
-
-
-
-/* GOLD HOVER LINE */
-
-nav a::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-    bottom:-8px;
-
-    width:0%;
-    height:2px;
-
-    background:#d4af37;
 
     transition:0.3s;
 
@@ -159,147 +116,63 @@ nav a:hover{
 
 
 
-nav a:hover::after{
-
-    width:100%;
-
-}
 
 
-
-/* =========================
-       HEADER EFFECT
-========================= */
-
-
-header:hover{
-
-    box-shadow:
-
-    0 5px 25px rgba(212,175,55,0.15);
-
-}
-
-
-
-/* =========================
-       GOLD TEXT STYLE
-========================= */
-
-
-.gold-text{
-
-    color:#d4af37;
-
-}
-
-
-/* =========================
-       SECTION COMMON
-========================= */
+/* Common Section */
 
 
 section{
 
-    padding:80px 8%;
+    padding:70px 8%;
 
 }
 
 
-.section-title{
+
+h2{
 
     text-align:center;
-
-    font-size:40px;
-
-    margin-bottom:40px;
 
     color:#d4af37;
 
-    letter-spacing:1px;
+    font-size:36px;
+
+    margin-bottom:40px;
 
 }
 
 
 
+p{
+
+    color:#ddd;
+
+    font-size:16px;
+
 /* =========================
-       SCROLL BAR
+   PART 2 - HERO + BUTTONS
 ========================= */
 
 
-::-webkit-scrollbar{
-
-    width:10px;
-
-}
-
-
-::-webkit-scrollbar-track{
-
-    background:#111;
-
-}
-
-
-::-webkit-scrollbar-thumb{
-
-    background:#d4af37;
-
-    border-radius:20px;
-
-}
-
-
-
-/* =========================
-       SELECTION COLOR
-========================= */
-
-
-::selection{
-
-    background:#d4af37;
-
-    color:#000;
-
-}
-
-
-
-/* END CSS PART 1 */
-
-/* =========================
-   CSS PART 2
-   HERO + BUTTONS + CATEGORIES
-========================= */
-
-
-/* =========================
-        HERO SECTION
-========================= */
-
+/* Hero Section */
 
 .hero{
 
-    min-height:90vh;
+    min-height:80vh;
 
     display:flex;
 
-    align-items:center;
-
     justify-content:center;
+
+    align-items:center;
 
     text-align:center;
 
-    position:relative;
-
     background:
-
     linear-gradient(
-        rgba(0,0,0,0.65),
-        rgba(0,0,0,0.85)
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.9)
     ),
-
     url("../images/banner.jpg");
 
     background-size:cover;
@@ -310,523 +183,142 @@ section{
 
 
 
-/* HERO CONTENT */
 
+.hero-content h2{
 
-.hero-content{
+    font-size:55px;
 
-    max-width:850px;
-
-}
-
-
-
-.hero h2{
-
-    font-size:60px;
-
-    line-height:1.2;
-
-    color:white;
+    color:#d4af37;
 
     margin-bottom:20px;
 
-    font-weight:700;
-
 }
 
 
 
-.hero h2 span{
-
-    color:#d4af37;
-
-}
-
-
-
-.hero p{
+.hero-content p{
 
     font-size:20px;
 
-    color:#ddd;
+    max-width:700px;
 
-    margin-bottom:35px;
+    margin:auto;
 
 }
 
 
 
-/* =========================
-        BUTTONS
-========================= */
 
 
-.btn{
+/* Premium Button */
 
-    display:inline-block;
+
+button{
+
+    margin-top:20px;
 
     padding:14px 35px;
 
-    margin:10px;
+    border:none;
 
     border-radius:30px;
 
+    background:#d4af37;
+
+    color:#000;
+
     font-size:16px;
 
-    font-weight:600;
-
-    transition:0.4s;
+    font-weight:bold;
 
     cursor:pointer;
 
-}
-
-
-
-/* GOLD BUTTON */
-
-
-.btn-primary{
-
-    background:#d4af37;
-
-    color:#000;
+    transition:0.4s;
 
 }
 
 
 
-.btn-primary:hover{
 
-    background:#fff;
+
+button:hover{
+
+    background:white;
+
+    color:black;
 
     transform:translateY(-5px);
 
-    box-shadow:
-
-    0 10px 25px rgba(212,175,55,0.4);
-
 }
 
 
 
-/* OUTLINE BUTTON */
 
 
-.btn-outline{
+/* Cart Button */
 
-    border:2px solid #d4af37;
+
+.cart{
+
+    background:transparent;
 
     color:#d4af37;
 
+    border:1px solid #d4af37;
+
 }
 
 
 
-.btn-outline:hover{
+.cart:hover{
 
     background:#d4af37;
 
     color:#000;
 
-    transform:translateY(-5px);
-
 }
 
-
-
-/* =========================
-       CATEGORY SECTION
+   /* =========================
+   PART 3 - CATEGORIES + PRODUCTS
 ========================= */
+
+
+/* Categories */
 
 
 .categories{
 
-    background:#111;
-
-}
-
-
-
-.category-grid{
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(4,1fr);
-
-    gap:25px;
-
-}
-
-
-
-/* CATEGORY CARD */
-
-
-.category-card{
-
-    background:#0b0b0b;
-
-    border:1px solid rgba(212,175,55,0.25);
-
-    border-radius:20px;
-
-    padding:35px 20px;
-
     text-align:center;
 
-    transition:0.4s;
-
 }
 
 
 
-.category-card img{
-
-    width:100px;
-
-    height:100px;
-
-    object-fit:cover;
-
-    margin:auto;
-
-    border-radius:50%;
-
-    border:3px solid #d4af37;
-
-    margin-bottom:20px;
-
-}
-
-
-
-.category-card h3{
-
-    color:#d4af37;
-
-    font-size:22px;
-
-    margin-bottom:10px;
-
-}
-
-
-
-.category-card p{
-
-    color:#ccc;
-
-    font-size:15px;
-
-}
-
-
-
-/* CATEGORY HOVER */
-
-
-.category-card:hover{
-
-    transform:translateY(-12px);
-
-    border-color:#d4af37;
-
-    box-shadow:
-
-    0 15px 35px rgba(212,175,55,0.2);
-
-}
-
-
-
-/* =========================
-      PREMIUM DIVIDER
-========================= */
-
-
-.gold-line{
-
-    width:80px;
-
-    height:3px;
-
-    background:#d4af37;
-
-    margin:20px auto;
-
-    border-radius:10px;
-
-}
-
-
-
-/* =========================
-      HERO GLOW EFFECT
-========================= */
-
-
-.hero::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:300px;
-
-    height:300px;
-
-    background:#d4af37;
-
-    opacity:0.08;
-
-    filter:blur(100px);
-
-    border-radius:50%;
-
-}
-
-
-
-.hero-content{
-
-    position:relative;
-
-    z-index:2;
-
-}
-
-
-/* END CSS PART 2 */
-
-/* =========================
-   CSS PART 3
-   PRODUCTS + BEST SELLERS
-   WHY CHOOSE US
-========================= */
-
-
-/* =========================
-       PRODUCT SECTION
-========================= */
-
-
-.products{
-
-    background:#0b0b0b;
-
-}
-
-
-
-.product-grid{
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(4,1fr);
-
-    gap:30px;
-
-}
-
-
-
-/* PRODUCT CARD */
-
-
-.product-card{
-
-    background:#111;
-
-    border-radius:20px;
-
-    overflow:hidden;
-
-    border:1px solid rgba(212,175,55,0.25);
-
-    transition:0.4s;
-
-    position:relative;
-
-}
-
-
-
-.product-card:hover{
-
-    transform:translateY(-12px);
-
-    border-color:#d4af37;
-
-    box-shadow:
-
-    0 15px 40px rgba(212,175,55,0.25);
-
-}
-
-
-
-/* PRODUCT IMAGE */
-
-
-.product-image{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-
-.product-image img{
-
-    width:100%;
-
-    height:300px;
-
-    object-fit:cover;
-
-    transition:0.5s;
-
-}
-
-
-
-.product-card:hover img{
-
-    transform:scale(1.08);
-
-}
-
-
-
-/* OFFER BADGE */
-
-
-.offer-badge{
-
-    position:absolute;
-
-    top:15px;
-
-    left:15px;
-
-    background:#d4af37;
-
-    color:#000;
-
-    padding:6px 15px;
-
-    border-radius:20px;
-
-    font-size:13px;
-
-    font-weight:700;
-
-}
-
-
-
-/* PRODUCT DETAILS */
-
-
-.product-info{
-
-    padding:25px;
-
-}
-
-
-
-.product-info h3{
-
-    color:#fff;
-
-    font-size:22px;
-
-    margin-bottom:10px;
-
-}
-
-
-
-.product-info p{
-
-    color:#aaa;
-
-    font-size:14px;
-
-    margin-bottom:15px;
-
-}
-
-
-
-/* PRICE */
-
-
-.price{
+.categories ul{
 
     display:flex;
 
-    gap:12px;
+    justify-content:center;
 
-    align-items:center;
+    flex-wrap:wrap;
 
-    margin-bottom:20px;
+    gap:20px;
 
-}
-
-
-
-.price .old{
-
-    color:#777;
-
-    text-decoration:line-through;
+    list-style:none;
 
 }
 
 
 
-.price .new{
+.categories li{
+
+    padding:15px 30px;
+
+    border:1px solid #d4af37;
+
+    border-radius:30px;
 
     color:#d4af37;
-
-    font-size:22px;
-
-    font-weight:700;
-
-}
-
-
-
-/* BUY BUTTON */
-
-
-.buy-btn{
-
-    width:100%;
-
-    padding:12px;
-
-    border:none;
-
-    background:#d4af37;
-
-    color:#000;
-
-    border-radius:25px;
-
-    font-weight:700;
-
-    cursor:pointer;
 
     transition:0.3s;
 
@@ -834,34 +326,28 @@ section{
 
 
 
-.buy-btn:hover{
+.categories li:hover{
 
-    background:white;
+    background:#d4af37;
 
-}
-
-
-
-/* =========================
-      BEST SELLERS
-========================= */
-
-
-.best-sellers{
-
-    background:#111;
+    color:#000;
 
 }
 
 
 
-.best-grid{
+
+
+
+/* Product Container */
+
+
+.product-container{
 
     display:grid;
 
     grid-template-columns:
-
-    repeat(3,1fr);
+    repeat(auto-fit,minmax(260px,1fr));
 
     gap:30px;
 
@@ -869,17 +355,22 @@ section{
 
 
 
-.best-card{
 
-    background:#0b0b0b;
 
-    padding:30px;
+/* Product Card */
 
-    text-align:center;
+
+.product-card{
+
+    background:#111;
+
+    padding:25px;
 
     border-radius:20px;
 
-    border:1px solid rgba(212,175,55,0.2);
+    border:1px solid #333;
+
+    text-align:center;
 
     transition:0.4s;
 
@@ -887,319 +378,24 @@ section{
 
 
 
-.best-card:hover{
+
+
+.product-card:hover{
 
     transform:translateY(-10px);
 
     border-color:#d4af37;
-
-}
-
-
-
-.best-card h3{
-
-    color:#d4af37;
-
-    margin:15px 0;
-
-}
-
-
-
-.best-card span{
-
-    color:#fff;
-
-    font-size:18px;
-
-}
-
-
-
-/* =========================
-       WHY CHOOSE US
-========================= */
-
-
-.why-section{
-
-    background:#0b0b0b;
-
-}
-
-
-
-.why-grid{
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(4,1fr);
-
-    gap:25px;
-
-}
-
-
-
-.why-card{
-
-    text-align:center;
-
-    padding:35px 20px;
-
-    background:#111;
-
-    border-radius:20px;
-
-    border:1px solid rgba(212,175,55,0.2);
-
-    transition:0.4s;
-
-}
-
-
-
-.why-card:hover{
-
-    transform:translateY(-10px);
 
     box-shadow:
-
-    0 15px 30px rgba(212,175,55,0.15);
-
-}
-
-
-
-.why-card i{
-
-    font-size:40px;
-
-    color:#d4af37;
-
-    margin-bottom:15px;
+    0 0 25px rgba(212,175,55,0.3);
 
 }
 
 
 
-.why-card h3{
 
-    color:white;
 
-    margin-bottom:10px;
-
-}
-
-
-
-.why-card p{
-
-    color:#aaa;
-
-    font-size:14px;
-
-}
-
-
-
-/* =========================
-      PRODUCT RATING
-========================= */
-
-
-.rating{
-
-    color:#d4af37;
-
-    margin-bottom:10px;
-
-    letter-spacing:2px;
-
-}
-
-
-
-/* =========================
-       STOCK STATUS
-========================= */
-
-
-.stock{
-
-    color:#28c76f;
-
-    font-size:14px;
-
-    margin-bottom:15px;
-
-}
-
-
-
-.out-stock{
-
-    color:#ff4d4d;
-
-}
-
-
-
-/* END CSS PART 3 */
-
-/* =========================
-   CSS PART 4
-   REVIEWS + GALLERY
-   NEWSLETTER + FOOTER
-========================= */
-
-
-/* =========================
-      CUSTOMER REVIEWS
-========================= */
-
-
-.reviews{
-
-    background:#111;
-
-}
-
-
-
-.review-grid{
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(3,1fr);
-
-    gap:30px;
-
-}
-
-
-
-.review-card{
-
-    background:#0b0b0b;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    border:1px solid rgba(212,175,55,0.25);
-
-    text-align:center;
-
-    transition:0.4s;
-
-}
-
-
-
-.review-card:hover{
-
-    transform:translateY(-10px);
-
-    border-color:#d4af37;
-
-}
-
-
-
-.review-card img{
-
-    width:80px;
-
-    height:80px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    margin:auto;
-
-    border:3px solid #d4af37;
-
-}
-
-
-
-.review-card h3{
-
-    margin:15px 0 5px;
-
-    color:#d4af37;
-
-}
-
-
-
-.review-card p{
-
-    color:#ccc;
-
-    font-size:15px;
-
-}
-
-
-
-.stars{
-
-    color:#d4af37;
-
-    margin:10px 0;
-
-}
-
-
-
-/* =========================
-          GALLERY
-========================= */
-
-
-.gallery{
-
-    background:#0b0b0b;
-
-}
-
-
-
-.gallery-grid{
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(4,1fr);
-
-    gap:20px;
-
-}
-
-
-
-.gallery-item{
-
-    overflow:hidden;
-
-    border-radius:20px;
-
-    border:1px solid rgba(212,175,55,0.2);
-
-}
-
-
-
-.gallery-item img{
+.product-card img{
 
     width:100%;
 
@@ -1207,218 +403,144 @@ section{
 
     object-fit:cover;
 
-    transition:0.5s;
+    border-radius:15px;
 
 }
 
 
 
-.gallery-item:hover img{
-
-    transform:scale(1.1);
-
-}
 
 
 
-/* =========================
-       CUSTOM ORDER
-========================= */
+.product-card h3{
 
-
-.custom-order{
-
-    background:
-
-    linear-gradient(
-
-    rgba(0,0,0,0.8),
-
-    rgba(0,0,0,0.9)
-
-    ),
-
-    url("../images/custom-bg.jpg");
-
-
-
-    background-size:cover;
-
-    background-position:center;
-
-    text-align:center;
-
-}
-
-
-
-.custom-order h2{
-
-    font-size:45px;
+    margin-top:20px;
 
     color:#d4af37;
 
-    margin-bottom:20px;
+    font-size:22px;
 
 }
 
 
 
-.custom-order p{
 
-    color:#ddd;
 
-    max-width:700px;
+.product-card p{
+
+    margin:10px 0;
+
+}
+
+
+
+
+
+/* Price */
+
+
+.price{
+
+    font-size:22px;
+
+    color:#fff;
+
+    font-weight:bold;
+
+}
+
+
+
+.price span{
+
+    color:#888;
+
+    text-decoration:line-through;
+
+    font-size:16px;
+
+    margin-left:10px;
+
+}
+
+
+
+
+
+/* Stock */
+
+
+.stock{
+
+    color:#00ff88;
+
+    font-weight:bold;
+
+}
+
+   /* =========================
+   PART 4 - ABOUT + CONTACT
+   REVIEWS + GALLERY
+========================= */
+
+
+/* About Section */
+
+
+.about{
+
+    max-width:900px;
 
     margin:auto;
 
-    margin-bottom:30px;
-
-}
-
-
-
-/* =========================
-       NEWSLETTER
-========================= */
-
-
-.newsletter{
-
-    background:#111;
-
     text-align:center;
 
 }
 
 
 
-.newsletter h2{
+.about p{
 
-    color:#d4af37;
+    margin:20px 0;
 
-    font-size:35px;
-
-    margin-bottom:15px;
+    font-size:18px;
 
 }
 
 
 
-.newsletter p{
-
-    color:#aaa;
-
-    margin-bottom:25px;
-
-}
 
 
+/* About Boxes */
 
-.newsletter-box{
+
+.mission{
 
     display:flex;
 
     justify-content:center;
 
-    gap:10px;
+    flex-wrap:wrap;
+
+    gap:25px;
 
 }
 
 
 
-.newsletter-box input{
+.about-box{
 
-    width:350px;
+    background:#111;
 
-    padding:15px 20px;
+    padding:30px;
 
-    border-radius:30px;
+    width:280px;
 
-    border:none;
+    border-radius:20px;
 
-    outline:none;
+    border:1px solid #333;
 
-    background:#222;
-
-    color:white;
-
-}
-
-
-
-.newsletter-box button{
-
-    padding:15px 30px;
-
-    border:none;
-
-    border-radius:30px;
-
-    background:#d4af37;
-
-    color:#000;
-
-    font-weight:700;
-
-    cursor:pointer;
-
-}
-
-
-
-/* =========================
-            FOOTER
-========================= */
-
-
-footer{
-
-    background:#050505;
-
-    padding:60px 8% 20px;
-
-    border-top:1px solid rgba(212,175,55,0.3);
-
-}
-
-
-
-.footer-grid{
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(4,1fr);
-
-    gap:30px;
-
-}
-
-
-
-.footer-box h3{
-
-    color:#d4af37;
-
-    margin-bottom:20px;
-
-}
-
-
-
-.footer-box p,
-
-.footer-box a{
-
-    color:#aaa;
-
-    font-size:15px;
-
-    display:block;
-
-    margin-bottom:10px;
+    text-align:center;
 
     transition:0.3s;
 
@@ -1426,7 +548,60 @@ footer{
 
 
 
-.footer-box a:hover{
+.about-box:hover{
+
+    border-color:#d4af37;
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+.about-box h3{
+
+    color:#d4af37;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+/* Contact */
+
+
+.contact{
+
+    text-align:center;
+
+}
+
+
+
+.contact-box{
+
+    background:#111;
+
+    padding:25px;
+
+    margin:20px auto;
+
+    max-width:400px;
+
+    border-radius:20px;
+
+    border:1px solid #333;
+
+}
+
+
+
+.contact-box h3{
 
     color:#d4af37;
 
@@ -1434,12 +609,26 @@ footer{
 
 
 
-/* SOCIAL ICONS */
 
 
-.social-icons{
+/* Order Form */
+
+
+.order-form{
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+
+
+form{
 
     display:flex;
+
+    flex-direction:column;
 
     gap:15px;
 
@@ -1447,21 +636,145 @@ footer{
 
 
 
-.social-icons a{
+input,
+textarea{
 
-    width:40px;
+    padding:15px;
 
-    height:40px;
+    background:#111;
+
+    border:1px solid #555;
+
+    color:white;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+
+
+textarea{
+
+    height:150px;
+
+    resize:none;
+
+}
+
+
+
+
+
+
+/* Gallery */
+
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.gallery img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    transition:0.4s;
+
+}
+
+
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* Reviews */
+
+
+.review-container{
 
     display:flex;
 
+    flex-wrap:wrap;
+
     justify-content:center;
 
-    align-items:center;
+    gap:25px;
 
-    border-radius:50%;
+}
 
-    border:1px solid #d4af37;
+
+
+.review-card{
+
+    background:#111;
+
+    padding:25px;
+
+    width:300px;
+
+    border-radius:20px;
+
+    border:1px solid #333;
+
+}
+
+
+
+.review-card h4{
+
+    color:#d4af37;
+
+}
+
+  /* =========================
+   PART 5 - FOOTER
+   RESPONSIVE + ANIMATION
+========================= */
+
+
+/* Footer */
+
+
+footer{
+
+    background:#050505;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-top:1px solid #d4af37;
+
+    margin-top:50px;
+
+}
+
+
+
+footer p{
 
     color:#d4af37;
 
@@ -1469,58 +782,16 @@ footer{
 
 
 
-.social-icons a:hover{
-
-    background:#d4af37;
-
-    color:#000;
-
-}
 
 
-
-/* COPYRIGHT */
-
-
-.copyright{
-
-    text-align:center;
-
-    margin-top:40px;
-
-    padding-top:20px;
-
-    border-top:1px solid rgba(255,255,255,0.1);
-
-    color:#777;
-
-    font-size:14px;
-
-}
+/* Animation */
 
 
+.product-card,
+.about-box,
+.contact-box{
 
-/* END CSS PART 4 */
-
-/* =========================
-   CSS PART 5
-   RESPONSIVE + ANIMATIONS
-   FINAL POLISH
-========================= */
-
-
-/* =========================
-      FADE ANIMATION
-========================= */
-
-
-.fade-up{
-
-    opacity:0;
-
-    transform:translateY(40px);
-
-    animation:fadeUp 1s ease forwards;
+    animation:fadeUp 0.8s ease;
 
 }
 
@@ -1532,7 +803,7 @@ footer{
 
         opacity:0;
 
-        transform:translateY(40px);
+        transform:translateY(30px);
 
     }
 
@@ -1549,335 +820,146 @@ footer{
 
 
 
-/* =========================
-       FLOAT EFFECT
-========================= */
 
 
-.float{
-
-    animation:float 3s ease-in-out infinite;
-
-}
-
-
-
-@keyframes float{
-
-
-    0%{
-
-        transform:translateY(0);
-
-    }
-
-
-    50%{
-
-        transform:translateY(-10px);
-
-    }
-
-
-    100%{
-
-        transform:translateY(0);
-
-    }
-
-}
-
-
-
-/* =========================
-      GOLD SHINE EFFECT
-========================= */
-
-
-.shine{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-
-.shine::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-
-    left:-100%;
-
-    width:50%;
-
-    height:100%;
-
-    background:
-
-    linear-gradient(
-
-    120deg,
-
-    transparent,
-
-    rgba(255,255,255,0.5),
-
-    transparent
-
-    );
-
-    transition:0.6s;
-
-}
-
-
-
-.shine:hover::before{
-
-    left:120%;
-
-}
-
-
-
-/* =========================
-        TABLET VIEW
-========================= */
-
-
-@media(max-width:1024px){
-
-
-    header{
-
-        padding:20px 5%;
-
-    }
-
-
-    nav{
-
-        gap:20px;
-
-    }
-
-
-
-    .hero h2{
-
-        font-size:45px;
-
-    }
-
-
-
-    .category-grid{
-
-        grid-template-columns:
-
-        repeat(2,1fr);
-
-    }
-
-
-
-    .product-grid{
-
-        grid-template-columns:
-
-        repeat(2,1fr);
-
-    }
-
-
-
-    .best-grid{
-
-        grid-template-columns:
-
-        repeat(2,1fr);
-
-    }
-
-
-
-    .why-grid{
-
-        grid-template-columns:
-
-        repeat(2,1fr);
-
-    }
-
-
-
-    .gallery-grid{
-
-        grid-template-columns:
-
-        repeat(2,1fr);
-
-    }
-
-
-
-    .footer-grid{
-
-        grid-template-columns:
-
-        repeat(2,1fr);
-
-    }
-
-
-}
-
-
-
-/* =========================
-        MOBILE VIEW
-========================= */
+/* Mobile Responsive */
 
 
 @media(max-width:768px){
 
 
+header{
 
-    header{
+    flex-direction:column;
 
-        flex-direction:column;
+    gap:20px;
 
-        gap:20px;
+    padding:20px;
 
-    }
+}
 
 
 
-    header h1{
+header h1{
 
-        font-size:26px;
+    font-size:25px;
 
-    }
+}
 
 
 
-    nav{
+nav{
 
-        flex-wrap:wrap;
+    gap:15px;
 
-        justify-content:center;
+    flex-wrap:wrap;
 
-        gap:15px;
+    justify-content:center;
 
-    }
+}
 
 
 
-    nav a{
+nav a{
 
-        font-size:14px;
+    font-size:14px;
 
-    }
+}
 
 
 
-    section{
 
-        padding:60px 5%;
+.hero-content h2{
 
-    }
+    font-size:35px;
 
+}
 
 
-    .hero{
 
-        min-height:80vh;
+.hero-content p{
 
-    }
+    font-size:16px;
 
+}
 
 
-    .hero h2{
 
-        font-size:35px;
+section{
 
-    }
+    padding:50px 5%;
 
+}
 
 
-    .hero p{
 
-        font-size:16px;
 
-    }
+h2{
 
+    font-size:28px;
 
+}
 
-    .btn{
 
-        padding:12px 25px;
 
-    }
+.product-container{
 
+    grid-template-columns:1fr;
 
+}
 
-    .category-grid,
 
-    .product-grid,
 
-    .best-grid,
+.product-card img{
 
-    .why-grid,
+    height:220px;
 
-    .review-grid,
+}
 
-    .gallery-grid,
 
-    .footer-grid{
 
-        grid-template-columns:1fr;
+.mission{
 
-    }
+    flex-direction:column;
 
+    align-items:center;
 
+}
 
-    .product-image img{
 
-        height:250px;
 
-    }
+.about-box{
 
+    width:100%;
 
+}
 
-    .custom-order h2{
 
-        font-size:32px;
 
-    }
 
+.categories ul{
 
+    flex-direction:column;
 
-    .newsletter-box{
+    align-items:center;
 
-        flex-direction:column;
+}
 
-        align-items:center;
 
-    }
 
+.categories li{
 
+    width:90%;
 
-    .newsletter-box input{
+}
 
-        width:100%;
 
-    }
+
+button{
+
+    width:100%;
+
+}
 
 
 
@@ -1885,116 +967,28 @@ footer{
 
 
 
-/* =========================
-      SMALL MOBILE
-========================= */
+
+/* Small Mobile */
 
 
 @media(max-width:400px){
 
 
+header h1{
 
-    header h1{
-
-        font-size:22px;
-
-    }
-
-
-
-    .hero h2{
-
-        font-size:30px;
-
-    }
-
-
-
-    .section-title{
-
-        font-size:30px;
-
-    }
-
-
-
-    .product-info h3{
-
-        font-size:20px;
-
-    }
-
+    font-size:22px;
 
 }
 
 
 
-/* =========================
-      LOADING EFFECT
-========================= */
+.hero-content h2{
 
-
-body{
-
-    animation:pageLoad 0.8s ease;
+    font-size:28px;
 
 }
 
 
-
-@keyframes pageLoad{
-
-
-    from{
-
-        opacity:0;
-
-    }
-
-
-    to{
-
-        opacity:1;
-
-    }
+} 
 
 }
-
-
-
-/* =========================
-       FINAL LUXURY TOUCH
-========================= */
-
-
-.gold-border{
-
-    border:1px solid #d4af37;
-
-    border-radius:20px;
-
-}
-
-
-
-.shadow-gold{
-
-    box-shadow:
-
-    0 10px 40px rgba(212,175,55,0.25);
-
-}
-
-
-
-.text-center{
-
-    text-align:center;
-
-}
-
-
-
-/* =========================
-       END COMPLETE CSS
-========================= */
