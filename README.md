@@ -1,16 +1,64 @@
-## Hi there 👋
+# ✨ SHAS METHODS
 
-<!--
-**shasmethods/Shasmethods** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Welcome to **SHAS METHODS** — A premium handmade creative brand.
 
-Here are some ideas to get you started:
+We create unique handmade products with luxury designs and custom personalization.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 🌟 About
+
+SHAS METHODS focuses on:
+
+- Resin Art
+- Premium Frames
+- Custom Keychains
+- Wall Decor
+- Custom T-Shirt Designs
+- Personalized Gifts
+
+Every product is designed with creativity, quality and premium finishing.
+
+---
+
+## 🛍️ Products
+
+Our collection includes:
+
+✨ Resin Art Frames  
+✨ Custom Name Keychains  
+✨ Luxury Home Decor  
+✨ Custom Printed T-Shirts  
+✨ Special Occasion Gifts  
+
+---
+
+## 💎 Features
+
+✅ Premium Dark Theme Website  
+✅ Mobile Friendly Design  
+✅ Product Showcase  
+✅ Custom Order Support  
+✅ WhatsApp Ordering  
+✅ Handmade Product Gallery  
+
+---
+
+## 📂 Website Structure
+
+
+---
+
+## 📞 Contact
+
+For custom orders:
+
+📱 WhatsApp: Add your number  
+📸 Instagram: Add your page  
+
+---
+
+## © Copyright
+
+© 2026 SHAS METHODS  
+All Rights Reserved.
