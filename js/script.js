@@ -82,6 +82,8 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => {
 
 
     });
-
-
+// Mobile Menu Toggle
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+}
 });
