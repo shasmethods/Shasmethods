@@ -612,3 +612,446 @@ section{
 #topBtn:hover{
     transform:translateY(-5px);
 }
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+   (0px - 767px)
+===================================================== */
+
+@media screen and (max-width:767px){
+
+    .container{
+        width:92%;
+    }
+
+    section{
+        padding:70px 0;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .section-title p{
+        font-size:15px;
+    }
+
+    /* Header */
+
+    .header .container{
+        height:75px;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+    .mobile-menu{
+        display:block;
+    }
+
+    .login-btn{
+        display:none;
+    }
+
+    .icon-btn{
+        width:40px;
+        height:40px;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    /* Hero */
+
+    .hero{
+        text-align:center;
+        padding-top:100px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    /* About */
+
+    .about-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .about-content{
+        text-align:center;
+    }
+
+    .about-content h3{
+        font-size:28px;
+    }
+
+    .about-features{
+        grid-template-columns:1fr;
+    }
+
+    /* Categories */
+
+    .category-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Products */
+
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Why Choose Us */
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Contact */
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Footer */
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    /* Newsletter */
+
+    .newsletter-form{
+        flex-direction:column;
+    }
+
+    .newsletter-form input{
+        width:100%;
+    }
+
+    .newsletter-form .btn{
+        width:100%;
+    }
+
+    /* Banner */
+
+    .premium-banner h2{
+        font-size:34px;
+    }
+
+    .premium-banner p{
+        font-size:16px;
+    }
+
+}
+/* =====================================================
+   RESPONSIVE - TABLET
+   (768px - 1023px)
+===================================================== */
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+    .container{
+        width:92%;
+    }
+
+    section{
+        padding:80px 0;
+    }
+
+    .section-title h2{
+        font-size:36px;
+    }
+
+    /* Header */
+
+    .navbar ul{
+        gap:20px;
+    }
+
+    .login-btn{
+        display:none;
+    }
+
+    .mobile-menu{
+        display:block;
+    }
+
+    /* Hero */
+
+    .hero h1{
+        font-size:56px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    /* About */
+
+    .about-wrapper{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .about-features{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    /* Categories */
+
+    .category-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* Products */
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* Why Choose Us */
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* Contact */
+
+    .contact-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* Footer */
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+    }
+
+}
+
+/* =====================================================
+   DESKTOP OPTIMIZATION
+   (1024px and above)
+===================================================== */
+
+@media screen and (min-width:1024px){
+
+    .container{
+        width:90%;
+        max-width:1300px;
+    }
+
+    .hero h1{
+        font-size:70px;
+    }
+
+    .hero p{
+        max-width:650px;
+    }
+
+    .about-wrapper{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .category-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .contact-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:2fr 1fr 1fr;
+    }
+
+}
+/* =====================================================
+   UTILITY CLASSES
+===================================================== */
+
+.text-center{
+    text-align:center;
+}
+
+.mt-20{
+    margin-top:20px;
+}
+
+.mt-40{
+    margin-top:40px;
+}
+
+.mb-20{
+    margin-bottom:20px;
+}
+
+.mb-40{
+    margin-bottom:40px;
+}
+
+.hidden{
+    display:none;
+}
+
+.show{
+    display:block;
+}
+
+/* =====================================================
+   IMAGE EFFECTS
+===================================================== */
+
+.category-card img,
+.product-card img,
+.about-image img{
+    transition:transform .4s ease;
+}
+
+.category-card:hover img,
+.product-card:hover img,
+.about-image:hover img{
+    transform:scale(1.05);
+}
+
+/* =====================================================
+   SMOOTH TRANSITIONS
+===================================================== */
+
+a,
+button,
+.btn,
+.icon-btn,
+.category-card,
+.product-card,
+.feature-box,
+.contact-box,
+.why-card,
+.social-icons a{
+    transition:all .3s ease;
+}
+
+/* =====================================================
+   SCROLL ANIMATIONS
+===================================================== */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(40px);
+    animation:fadeUp .8s ease forwards;
+}
+
+.fade-left{
+    opacity:0;
+    transform:translateX(-40px);
+    animation:fadeLeft .8s ease forwards;
+}
+
+.fade-right{
+    opacity:0;
+    transform:translateX(40px);
+    animation:fadeRight .8s ease forwards;
+}
+
+.zoom-in{
+    opacity:0;
+    transform:scale(.9);
+    animation:zoomIn .7s ease forwards;
+}
+
+/* =====================================================
+   KEYFRAMES
+===================================================== */
+
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeLeft{
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeRight{
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes zoomIn{
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* =====================================================
+   CUSTOM SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--gold);
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--gold-light);
+}
+
+/* =====================================================
+   TEXT SELECTION
+===================================================== */
+
+::selection{
+    background:var(--gold);
+    color:#000;
+}
+
+/* =====================================================
+   END OF FILE
+===================================================== */
